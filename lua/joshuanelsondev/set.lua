@@ -23,14 +23,9 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 
 vim.o.background = 'dark'
-vim.o.t_Co = '256'
 
 vim.o.cursorline = true
 
 vim.o.laststatus = 2
 
 vim.o.clipboard = 'unnamed'
-vim.o.cindent = true
-vim.cmd('set cinkeys-=0#')
-vim.o.belloff = 'all'
-vim.o.backspace = '2'

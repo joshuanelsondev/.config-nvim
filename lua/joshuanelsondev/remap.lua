@@ -13,8 +13,8 @@ vim.keymap.set('n', '<leader>s', ':%s/')
 vim.keymap.set('n', '<leader>q', ':wq<CR>')
 
 -- Insert mode mappings
-vim.keymap.set('i', '<leader>j', '<Esc>:m .+1<CR>==gi')
-vim.keymap.set('i', '<leader>k', '<Esc>:m .-2<CR>==gi')
+vim.keymap.set('i', '<C-j>', '<Esc>:m .+1<CR>==gi')
+vim.keymap.set('i', '<C-k>', '<Esc>:m .-2<CR>==gi')
 vim.keymap.set('i', '<Tab>', '<Esc>')
 
 -- Visual mode mappings
