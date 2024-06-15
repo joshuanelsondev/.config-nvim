@@ -13,13 +13,14 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
 	use({
 		'marko-cerovac/material.nvim',
 		as = 'material',
 		config = function()
 			vim.cmd 'colorscheme material'
 		end
-	}) 
+	})
 
 	use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
 	use('nvim-treesitter/playground')
@@ -38,6 +39,6 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
-   
+  use('mbbill/undotree')
 
-end)	
+end)

@@ -16,6 +16,7 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+
 -- Insert mode mappings
 vim.keymap.set('i', '<C-j>', '<Esc>:m .+1<CR>==gi')
 vim.keymap.set('i', '<C-k>', '<Esc>:m .-2<CR>==gi')
