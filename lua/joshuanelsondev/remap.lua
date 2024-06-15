@@ -11,6 +11,10 @@ vim.keymap.set('n', '<leader>n', ':NERDTreeToggle<CR>')
 vim.keymap.set('n', '<leader><CR>', ':w<CR>')
 vim.keymap.set('n', '<leader>s', ':%s/')
 vim.keymap.set('n', '<leader>q', ':wq<CR>')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- Insert mode mappings
 vim.keymap.set('i', '<C-j>', '<Esc>:m .+1<CR>==gi')
@@ -23,3 +27,4 @@ vim.keymap.set('v', '<leader>k', ":m '<-2<CR>gv=gv")
 
 -- General mappings
 vim.keymap.set('', '<Tab>', '<Esc>')
+vim.keymap.set('x', '<leader>p', "\"_dp")
