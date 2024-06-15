@@ -9,6 +9,7 @@ local function find_files_with_layout()
       prompt_position = 'top',
       preview_cutoff = 100,
     },
+    --theme = 'dropdown',
   })
 end
 
@@ -20,6 +21,7 @@ local function git_files_with_layout()
       prompt_position = 'top',
       preview_cutoff = 100,
     },
+    --theme = 'dropdown',
   })
 end
 
