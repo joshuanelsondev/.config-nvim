@@ -4,12 +4,21 @@ lsp.preset('recommended')
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  -- Replace the language servers listed here 
-  -- with the ones you want to install
   ensure_installed = {'tsserver', 'eslint', 'lua_ls'},
   handlers = {
     function(server_name)
-      require('lspconfig')[server_name].setup({})
+      -- Check for the server name and add custom settings
+      if server_name == 'eslint' then
+        require('lspconfig')[server_name].setup({
+          settings = {
+            rules = {
+              ["import/no-commonjs"] = "off"
+            }
+          }
+        })
+      else
+        require('lspconfig')[server_name].setup({})
+      end
     end,
   },
 })
