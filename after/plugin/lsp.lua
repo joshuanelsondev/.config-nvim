@@ -5,22 +5,6 @@ lsp.preset('recommended')
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {'tsserver', 'eslint', 'lua_ls'},
-  handlers = {
-    function(server_name)
-      -- Check for the server name and add custom settings
-      if server_name == 'eslint' then
-        require('lspconfig')[server_name].setup({
-          settings = {
-            rules = {
-              ["import/no-commonjs"] = "off"
-            }
-          }
-        })
-      else
-        require('lspconfig')[server_name].setup({})
-      end
-    end,
-  },
 })
 require('lspconfig').lua_ls.setup {
   settings = {
@@ -31,6 +15,36 @@ require('lspconfig').lua_ls.setup {
     },
   },
 }
+
+
+
+local cmp = require('cmp')
+
+cmp.setup({
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+    ['<C-y>'] = cmp.mapping.confirm(),
+    ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-d>'] = cmp.mapping.scroll_docs(4),
+  }),
+  snippet = {
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body)
+    end,
+  },
+})
+
+cmp.setup({
+  sources = {
+    {name = 'nvim_lsp'},
+  }
+})
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
