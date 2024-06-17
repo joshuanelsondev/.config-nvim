@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
     },
   }
 
-  use('mfussenegger/nvim-lint')
+  use 'dense-analysis/ale'
 
   use('mattn/emmet-vim')
 end)

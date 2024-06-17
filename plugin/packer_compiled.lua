@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ale = {
+    loaded = true,
+    path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   catppuccin = {
     loaded = true,
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -123,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lint"] = {
-    loaded = true,
-    path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/nvim-lint",
-    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
