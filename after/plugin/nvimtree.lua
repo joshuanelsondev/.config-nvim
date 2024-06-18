@@ -10,6 +10,9 @@ vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = tru
 vim.api.nvim_set_keymap('n', '<leader>pv', ':NvimTreeOpen<CR>:wincmd p | q<CR>', { noremap = true, silent = true })
 
 require('nvim-tree').setup {
+  view = {
+    width = 25,
+  },
   filters = {
     dotfiles = false,
     custom = {}
