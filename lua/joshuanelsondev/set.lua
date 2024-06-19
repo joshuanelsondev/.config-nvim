@@ -29,7 +29,3 @@ vim.o.background = 'dark'
 vim.o.cursorline = true
 
 vim.o.laststatus = 2
-
-vim.o.clipboard = 'unnamed'
-
-
