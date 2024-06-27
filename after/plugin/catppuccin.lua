@@ -47,7 +47,7 @@ require("catppuccin").setup({
     },
 })
 
-vim.cmd.colorscheme "catppuccin"
+-- vim.cmd.colorscheme "catppuccin"
 vim.cmd('highlight Normal ctermbg=NONE')
 vim.cmd('highlight nonText ctermbg=NONE')
 vim.cmd('highlight LineNr guifg=silver')

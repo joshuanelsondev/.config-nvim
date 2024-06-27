@@ -38,8 +38,6 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use { "catppuccin/nvim", as = "catppuccin" }
-
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
@@ -50,4 +48,10 @@ return require('packer').startup(function(use)
   use 'dense-analysis/ale'
 
   use('mattn/emmet-vim')
+
+  -- Themes
+  use { "catppuccin/nvim", as = "catppuccin" }
+
+  use ("EdenEast/nightfox.nvim")
+
 end)
