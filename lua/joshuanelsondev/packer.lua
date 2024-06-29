@@ -54,4 +54,5 @@ return require('packer').startup(function(use)
 
   use ("EdenEast/nightfox.nvim")
 
+  use ('shaunsingh/nord.nvim')
 end)
