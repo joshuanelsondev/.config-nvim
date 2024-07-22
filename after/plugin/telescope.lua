@@ -3,25 +3,27 @@ local builtin = require('telescope.builtin')
 -- Layout configuration
 local function find_files_with_layout()
   builtin.find_files({
-    layout_strategy = 'center',
+    layout_strategy = 'horizontal',
     layout_config = {
-      --height = 25,
-      prompt_position = 'top',
+      height = 50,
+      width = 100,
+      preview_width = 60,
       preview_cutoff = 100,
+      prompt_position = 'bottom',
     },
-    --theme = 'dropdown',
   })
 end
 
 local function git_files_with_layout()
   builtin.git_files({
-    layout_strategy = 'center',
+    layout_strategy = 'horizontal',
     layout_config = {
-      --height = 25,
-      prompt_position = 'top',
+      height = 50,
+      width = 100,
+      preview_width = 60,
       preview_cutoff = 100,
+      prompt_position = 'bottom',
     },
-    --theme = 'dropdown',
   })
 end
 
