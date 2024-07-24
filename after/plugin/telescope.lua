@@ -7,7 +7,7 @@ local function find_files_with_layout()
     layout_config = {
       height = 50,
       width = 100,
-      preview_width = 60,
+      preview_width = 50,
       preview_cutoff = 100,
       prompt_position = 'bottom',
     },
