@@ -20,15 +20,27 @@ local function git_files_with_layout()
     layout_config = {
       height = 50,
       width = 100,
-      preview_width = 60,
+      preview_width = 50,
       preview_cutoff = 100,
       prompt_position = 'bottom',
     },
   })
 end
 
+local function grep_string_with_layout()
+  builtin.grep_string({
+    layout_strategy = 'horizontal',
+    layout_config = {
+      height = 50,
+      width = 100,
+      preview_width = 50,
+      preview_cutoff = 100,
+      prompt_position = 'bottom',
+    },
+    search = vim.fn.input("Grep > ")
+  })
+end
+
 vim.keymap.set('n', '<leader>pf', find_files_with_layout, {})
 vim.keymap.set('n', '<C-p>', git_files_with_layout, {})
-vim.keymap.set('n', '<leader>ps', function()
-  builtin.grep_string({ search = vim.fn.input("Grep > ") })
-end)
+vim.keymap.set('n', '<leader>ps', grep_string_with_layout, {})
