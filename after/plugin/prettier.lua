@@ -1,17 +1,19 @@
 local prettier = require("prettier")
 
 prettier.setup({
-    bin = 'prettier', -- or specify the path if not globally installed
-    filetypes = {
-        "javascript", "typescript", "javascriptreact", "typescriptreact",
-        "css", "html", "json", "yaml", "markdown",
-    },
-    arrow_parens = "always",
-    bracket_spacing = true,
-    single_quote = true,
-    semi = false,
-    tab_width = 2,
-    trailing_comma = "es5",
+  bin = 'prettier', -- or specify the path if not globally installed
+  filetypes = {
+    "javascript", "typescript", "javascriptreact", "typescriptreact",
+    "css", "html", "json", "yaml", "markdown",
+  },
+  extra_args = {
+    "--arrow-parens", "always",
+    "--bracket-spacing",
+    "--single-quote",
+    "--no-semi",
+    "--tab-width", "2",
+    "--trailing-comma", "es5",
+  }
 })
 
 -- Auto-command for formatting on save
