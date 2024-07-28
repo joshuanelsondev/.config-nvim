@@ -6,6 +6,12 @@ prettier.setup({
         "javascript", "typescript", "javascriptreact", "typescriptreact",
         "css", "html", "json", "yaml", "markdown",
     },
+    arrow_parens = "always",
+    bracket_spacing = true,
+    single_quote = true,
+    semi = false,
+    tab_width = 2,
+    trailing_comma = "es5",
 })
 
 -- Auto-command for formatting on save
