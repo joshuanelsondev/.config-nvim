@@ -60,6 +60,8 @@ return require('packer').startup(function(use)
 
   use('MunifTanjim/prettier.nvim')
 
-  use 'marko-cerovac/material.nvim'
+  use('marko-cerovac/material.nvim')
+
+  use('nvim-tree/nvim-web-devicons')
 
 end)
