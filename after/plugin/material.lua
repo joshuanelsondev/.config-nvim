@@ -5,12 +5,7 @@ require('material').setup({
         sidebars = true,
         floating_windows = true,
     },
-    italics = {
-        comments = true,
-        keywords = true,
-    },
 })
-
 vim.cmd('colorscheme material')
 vim.cmd('highlight Normal ctermbg=NONE')
 vim.cmd('highlight nonText ctermbg=NONE')
