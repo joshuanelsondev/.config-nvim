@@ -1,3 +1,4 @@
+
 vim.g.material_style = "oceanic"
 
 require('material').setup({
