@@ -4,7 +4,6 @@ local builtin = require('telescope.builtin')
 local function find_files_with_layout()
   builtin.find_files({
     layout_strategy = 'horizontal',
-    borderchars = {' ','','','','','','',''},
     layout_config = {
       height = 30,
       width = 100,
