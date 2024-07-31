@@ -15,9 +15,34 @@ require('nvim-tree').setup {
   },
   filters = {
     dotfiles = false,
-    custom = {}
+    custom = {},
   },
   git = {
-    ignore = false
-  }
+    ignore = false,
+  },
+  renderer = {
+    icons = {
+      glyphs = {
+        default = '',
+        symlink = '',
+        git = {
+          unstaged = "✗",
+          staged = "✓",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "★",
+          deleted = "",
+          ignored = "◌",
+        },
+        folder = {
+          default = "",
+          open = "",
+          empty = "",
+          empty_open = "",
+          symlink = "",
+          symlink_open = "",
+        },
+      },
+    },
+  },
 }
