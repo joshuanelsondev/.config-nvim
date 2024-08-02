@@ -38,7 +38,17 @@ require('material').setup({
       Comment = { fg = "#35C0B4" },
       Visual = { fg = "#ffffff", bg = "#35C0B4" },
 
-    }
+    },
+
+    custom_colors = function(colors)
+      colors.syntax.variable = "#C792EA"
+      colors.syntax.keyword = "#C792EA"
+      colors.syntax.value = "#F78C6C"
+      colors.syntax.operator = "#89DDFF"
+      colors.syntax.fn = "#82AAFF"
+      colors.syntax.string = "#C3E88D"
+      colors.syntax.type = "#FFCB6B"
+    end
 })
 
 vim.cmd('colorscheme material')
