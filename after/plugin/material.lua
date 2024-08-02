@@ -5,6 +5,9 @@ require('material').setup({
     contrast = {
         sidebars = true,
     },
+    disable = {
+      borders = true,
+    },
     plugins = {
       "nvim-tree",
       "nvim-web-devicons",
