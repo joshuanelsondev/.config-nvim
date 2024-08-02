@@ -31,7 +31,7 @@ require('material').setup({
       TelescopeMatching = { fg = "#35c0b4", bg = "#1E2021" },
 
       Normal = { fg = "#ffffff" },
-      nonText = { fg = "#ffffff" },
+      Identifier = { fg = "#ffffff" },
       LineNr = { fg = "silver" },
       CursorLineNr = { fg = "#35C0B4" },
       Cursor = { fg = "#35C0B4" },
