@@ -15,9 +15,9 @@ require('material').setup({
     },
     custom_highlights = {
       -- Telescope Prompt
-      TelescopePromptBorder = { fg = "#253238", bg = "#253238" },
-      TelescopePromptTitle = { fg = "#ACD7E6", bg = "#253238" },
-      TelescopePromptNormal = { fg = "#ACD7E6", bg = "#253238" },
+      TelescopePromptBorder = { fg = "#253238", bg = "#1E2021" },
+      TelescopePromptTitle = { fg = "#ACD7E6", bg = "#1E2021" },
+      TelescopePromptNormal = { fg = "#ACD7E6", bg = "#1E2021" },
 
       -- Telescope Results
       TelescopeResultsBorder = { fg = "#253238", bg = "#1E2021" },
