@@ -16,13 +16,13 @@ end
 
 local function git_files_with_layout()
   builtin.git_files({
-    layout_strategy = 'horizontal',
+    layout_strategy = 'center',
     layout_config = {
-      height = 30,
-      width = 100,
-      preview_width = 50,
-      preview_cutoff = 100,
-      prompt_position = 'bottom',
+      height = 15,
+      width = 50,
+      --preview_width = 50,
+      --preview_cutoff = 100,
+      prompt_position = 'top',
     },
   })
 end
