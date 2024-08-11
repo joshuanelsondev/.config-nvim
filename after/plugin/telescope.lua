@@ -24,6 +24,7 @@ local function git_files_with_layout()
       --preview_cutoff = 100,
       prompt_position = 'top',
     },
+    previewer = false,
   })
 end
 
