@@ -1,7 +1,6 @@
 vim.opt.mouse = ""
 
 vim.defer_fn(function()
-  print('Loaded')
   vim.opt.termguicolors = true
   vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i:ver25-Cursor,ve:ver35-Cursor,o:hor50-Cursor"
   vim.cmd [[highlight Cursor guifg=white guibg=#35C0B4]]
