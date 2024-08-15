@@ -32,7 +32,7 @@ require('material').setup({
       TelescopeSelection = { fg = "#35c0b4", bg = "#1E2021" },
       TelescopeMatching = { fg = "#35c0b4", bg = "#1E2021" },
 
-      Normal = { fg = "#ffffff" },
+      Normal = { fg = "#ffffff", bg = "none" },
       Identifier = { fg = "#ffffff" },
       LineNr = { fg = "silver" },
       CursorLineNr = { fg = "#35C0B4" },
