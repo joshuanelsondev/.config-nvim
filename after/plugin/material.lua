@@ -2,10 +2,9 @@
 vim.g.material_style = "oceanic"
 
 require('material').setup({
-    contrast = {
-    },
     disable = {
       borders = true,
+      background = true,
     },
     plugins = {
       "nvim-tree",
