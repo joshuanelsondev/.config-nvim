@@ -1,31 +1,32 @@
-vim.g.mapleader = ' '
+
+local opts = { noremap = true, silent = true }
 
 -- Normal mode mappings
-vim.keymap.set('n', '<A-j>', ':m .+1<CR>==')
-vim.keymap.set('n', '<A-k>', ':m .-2<CR>==')
-vim.keymap.set('n', '<C-t>', ':Files!<CR>')
-vim.keymap.set('n', '<C-p>', ':GFiles!<CR>')
-vim.keymap.set('n', '<C-g>', ':Ag<CR>')
-vim.keymap.set('n', '<leader><CR>', ':w<CR>')
-vim.keymap.set('n', '<leader>so', ':s/')
-vim.keymap.set('n', '<leader>sa', ':%s/')
-vim.keymap.set('n', '<leader>t', ':term<CR>')
-vim.keymap.set('n', '<leader>q', ':wq<CR>')
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
-vim.keymap.set('n', 'n', 'nzzzv')
-vim.keymap.set('n', 'N', 'Nzzzv')
-
+vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', opts)
+vim.keymap.set('n', '<A-k>', ':m .-2<CR>==', opts)
+vim.keymap.set('n', '<C-t>', ':Files!<CR>', opts)
+vim.keymap.set('n', '<C-p>', ':GFiles!<CR>', opts)
+vim.keymap.set('n', '<C-g>', ':Ag<CR>', opts)
+vim.keymap.set('n', '<leader><CR>', ':w<CR>', opts)
+vim.keymap.set('n', '<leader>so', ':s/', opts)
+vim.keymap.set('n', '<leader>sa', ':%s/', opts)
+vim.keymap.set('n', '<leader>t', ':term<CR>', opts)
+vim.keymap.set('n', '<leader>q', ':wq<CR>', opts)
+vim.keymap.set('n', '<C-d>', '<C-d>zz', opts)
+vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
+vim.keymap.set('n', 'n', 'nzzzv', opts)
+vim.keymap.set('n', 'N', 'Nzzzv', opts)
+vim.keymap.set('n', '<leader>v', ':vert split<CR>', opts)
 
 -- Insert mode mappings
-vim.keymap.set('i', '<A-j>', '<Esc>:m .+1<CR>==gi')
-vim.keymap.set('i', '<A-k>', '<Esc>:m .-2<CR>==gi')
-vim.keymap.set('i', '<Tab>', '<Esc>')
+vim.keymap.set('i', '<A-j>', '<Esc>:m .+1<CR>==gi', opts)
+vim.keymap.set('i', '<A-k>', '<Esc>:m .-2<CR>==gi', opts)
+vim.keymap.set('i', '<Tab>', '<Esc>', opts)
 
 -- Visual mode mappings
-vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
-vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")
+vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv", opts)
+vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
 
 -- General mappings
-vim.keymap.set('', '<Tab>', '<Esc>')
-vim.keymap.set('x', '<leader>p', "\"_dp")
+vim.keymap.set('', '<Tab>', '<Esc>', opts)
+vim.keymap.set('x', '<leader>p', "\"_dp", opts)

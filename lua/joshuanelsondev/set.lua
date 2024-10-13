@@ -1,3 +1,4 @@
+vim.g.mapleader = ' '
 vim.opt.mouse = ""
 
 vim.defer_fn(function()
