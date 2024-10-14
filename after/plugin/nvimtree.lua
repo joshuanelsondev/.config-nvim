@@ -12,7 +12,7 @@ vim.api.nvim_set_keymap('n', '<leader>pv', ':NvimTreeOpen<CR>:wincmd p | q<CR>',
 require('nvim-tree').setup {
   view = {
     width = 25,
-    side = "right",
+    side = "left",
     relativenumber = true,
   },
   filters = {
