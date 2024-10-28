@@ -53,3 +53,8 @@ require('material').setup({
 })
 
 vim.cmd('colorscheme material')
+
+vim.cmd([[
+  highlight Search guifg=#ffffff guibg=#35c0b4 gui=bold
+  highlight IncSearch guifg=#ffffff guibg=#35c0b4 gui=bold
+]])
