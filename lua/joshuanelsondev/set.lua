@@ -1,9 +1,3 @@
-vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "*",
-  command = "highlight Search guifg=#FFFFFF guibg=#35c0b4 gui=bold | highlight IncSearch guifg=#FFFFFF guibg=#35c0b4 gui=bold"
-})
-
-
 vim.g.mapleader = ' '
 vim.opt.mouse = ""
 
@@ -41,3 +35,6 @@ vim.opt.updatetime = 50
 vim.o.background = 'dark'
 
 vim.o.cursorline = true
+
+vim.cmd[[highlight Search guifg=#FFFFFF guibg=#35C0B4]]
+vim.cmd[[highlight IncSearch guifg=#FFFFFF guibg=#35C0B4]]

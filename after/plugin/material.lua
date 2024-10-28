@@ -28,8 +28,8 @@ require('material').setup({
       TelescopePreviewNormal = { fg = "#ACD7E6", bg = "#1E2021" },
 
       -- Selection and Matching
-      TelescopeSelection = { fg = "#35c0b4", bg = "#1E2021" },
-      TelescopeMatching = { fg = "#35c0b4", bg = "#1E2021" },
+      TelescopeSelection = { fg = "#ffffff", bg = "#35c0b4" },
+      TelescopeMatching = { fg = "#ffffff", bg = "#35c0b4" },
 
       Normal = { fg = "#ffffff", bg = "none" },
       Identifier = { fg = "#ffffff" },
@@ -38,7 +38,7 @@ require('material').setup({
       Cursor = { fg = "#35C0B4" },
       Comment = { fg = "#35C0B4" },
       Visual = { fg = "#ffffff", bg = "#35C0B4" },
-
+      Search = { fg = "#ff5370"},
     },
 
     custom_colors = function(colors)
@@ -53,8 +53,3 @@ require('material').setup({
 })
 
 vim.cmd('colorscheme material')
-
-vim.cmd([[
-  highlight Search guifg=#ffffff guibg=#35c0b4 gui=bold
-  highlight IncSearch guifg=#ffffff guibg=#35c0b4 gui=bold
-]])

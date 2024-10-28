@@ -1,5 +1,5 @@
 
-local opts = { noremap = true, silent = true }
+local opts = { noremap = true }
 
 -- Normal mode mappings
 vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', opts)
