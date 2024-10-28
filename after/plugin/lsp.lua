@@ -4,7 +4,7 @@ lsp.preset('recommended')
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'eslint', 'lua_ls'},
+  ensure_installed = {'eslint', 'lua_ls'},
 })
 require('lspconfig').lua_ls.setup {
   settings = {

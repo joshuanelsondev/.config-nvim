@@ -1,3 +1,8 @@
+vim.cmd([[
+  highlight Search guifg=#ffffff guibg=#35c0b4 gui=bold
+  highlight IncSearch guifg=#ffffff guibg=#35c0b4 gui=bold
+]])
+
 vim.g.mapleader = ' '
 vim.opt.mouse = ""
 
