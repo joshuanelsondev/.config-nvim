@@ -29,7 +29,6 @@ require('material').setup({
 
       -- Selection and Matching
       TelescopeSelection = { fg = "#ffffff", bg = "#35c0b4" },
-      TelescopeMatching = { fg = "#ffffff", bg = "#35c0b4" },
 
       Normal = { fg = "#ffffff", bg = "none" },
       Identifier = { fg = "#ffffff" },
