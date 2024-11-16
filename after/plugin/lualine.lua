@@ -7,7 +7,16 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
-    lualine_b = { { 'filename', path = 1, color = { fg = '#0FBCA2' },}, 'branch' },
+    lualine_b = { { 'filename', path = 1, symbols = {
+          modified = '[+]',
+          readonly = '[RO]',
+          unnamed = '[No Name]',
+        },
+        color = function()
+          local modified = vim.bo.modified
+          return { fg = modified and '#DF3030' or '#0FBCA2' }
+        end,
+      }, 'branch' },
     lualine_c = {
       '%=',
     },
