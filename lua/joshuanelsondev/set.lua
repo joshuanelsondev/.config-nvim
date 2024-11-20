@@ -3,13 +3,12 @@ vim.opt.mouse = ""
 
 vim.defer_fn(function()
   vim.opt.termguicolors = true
-  vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i:ver25-Cursor,ve:ver35-Cursor,o:hor50-Cursor"
+  vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i:hor25-Cursor,ve:hor35-Cursor,o:hor50-Cursor"
   vim.cmd [[highlight Cursor guifg=white guibg=#35C0B4]]
 end, 100)
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
-
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 4
