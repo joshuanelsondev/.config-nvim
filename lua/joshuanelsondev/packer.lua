@@ -45,7 +45,6 @@ return require('packer').startup(function(use)
     },
   }
 
-  use 'dense-analysis/ale'
 
   use('mattn/emmet-vim')
 
