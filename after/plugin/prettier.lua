@@ -10,7 +10,7 @@ prettier.setup({
     arrow_parens = "always",
     bracket_spacing = true,
     single_quote = true,
-    semi = false,
+    semi = true,
     tab_width = 2,
     trailing_comma = "es5",
   },
