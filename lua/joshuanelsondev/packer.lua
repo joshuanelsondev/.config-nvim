@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use('dense-analysis/ale')
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
