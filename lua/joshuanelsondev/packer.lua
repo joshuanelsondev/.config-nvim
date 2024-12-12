@@ -6,7 +6,24 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use('dense-analysis/ale')
+  use {
+    'dense-analysis/ale',
+    config = function()
+      vim.g.ale_linters = {
+        javascript = {'eslint'},
+        javascriptreact = {'eslint'},
+        typescript = {'eslint'},
+        typescriptreact = {'eslint'}
+      }
+      vim.g.ale_fixers {
+        javascript = {'eslint'},
+        javascriptreact = {'eslint'},
+        typescript = {'eslint'},
+        typescriptreact = {'eslint'}
+      }
+      vim.g.ale_fix_on_save = 1
+    end
+  }
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
