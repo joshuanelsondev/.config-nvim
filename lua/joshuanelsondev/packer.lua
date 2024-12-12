@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
         typescript = {'eslint'},
         typescriptreact = {'eslint'}
       }
-      vim.g.ale_fixers {
+      vim.g.ale_fixers = {
         javascript = {'eslint'},
         javascriptreact = {'eslint'},
         typescript = {'eslint'},
