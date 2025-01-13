@@ -18,8 +18,8 @@ local function git_files_with_layout()
   builtin.git_files({
     layout_strategy = 'center',
     layout_config = {
-      height = 15,
-      width = 50,
+      height = 20,
+      width = 80,
       --preview_width = 50,
       --preview_cutoff = 100,
       prompt_position = 'top',
