@@ -12,20 +12,22 @@ require('material').setup({
       "telescope",
     },
     custom_highlights = {
+      -- Telescope Prompt Counter (number of results)
+      TelescopePromptCounter = { fg = "#35C0B4", bg = "none", bold = true },
       -- Telescope Prompt
-      TelescopePromptBorder = { fg = "#253238", bg = "#1E2021" },
-      TelescopePromptTitle = { fg = "#ACD7E6", bg = "#1E2021" },
-      TelescopePromptNormal = { fg = "#ACD7E6", bg = "#1E2021" },
+      TelescopePromptBorder = { fg = "#3E535A" },
+      TelescopePromptTitle = { fg = "#ACD7E6", bg = "#253237" },
+      TelescopePromptNormal = { fg = "#ACD7E6", bg = "#253237" },
 
       -- Telescope Results
-      TelescopeResultsBorder = { fg = "#253238", bg = "#1E2021" },
-      TelescopeResultsTitle = { fg = "#ACD7E6", bg = "#1E2021" },
-      TelescopeResultsNormal = { fg = "#ACD7E6", bg = "#1E2021" },
+      TelescopeResultsBorder = { fg = "#3E535A" },
+      TelescopeResultsTitle = { fg = "#ACD7E6", bg = "#253237" },
+      TelescopeResultsNormal = { fg = "#ACD7E6", bg = "#253237" },
 
       -- Telescope Preview
-      TelescopePreviewBorder = { fg = "#253238", bg = "#1E2021" },
-      TelescopePreviewTitle = { fg = "#ACD7E6", bg = "#1E2021" },
-      TelescopePreviewNormal = { fg = "#ACD7E6", bg = "#1E2021" },
+      TelescopePreviewBorder = { fg = "#3E535A" },
+      TelescopePreviewTitle = { fg = "#ffffff", bg = "#253237" },
+      TelescopePreviewNormal = { fg = "#ACD7E6", bg = "#253237" },
 
       -- Selection and Matching
       TelescopeSelection = { fg = "#ffffff", bg = "#35c0b4" },

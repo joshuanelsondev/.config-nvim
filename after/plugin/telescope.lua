@@ -15,18 +15,14 @@ local function find_files_with_layout()
 end
 
 local function git_files_with_layout()
-  builtin.git_files({
-    layout_strategy = 'center',
-    sorting_strategy = "ascending",
+ builtin.git_files(require('telescope.themes').get_dropdown({
     layout_config = {
       height = 20,
       width = 80,
-      --preview_width = 50,
-      --preview_cutoff = 100,
-      prompt_position = 'top',
     },
     previewer = false,
-  })
+    prompt_title = "",
+  }))
 end
 
 local function grep_string_with_layout()
