@@ -17,6 +17,7 @@ end
 local function git_files_with_layout()
   builtin.git_files({
     layout_strategy = 'center',
+    sorting_strategy = "ascending",
     layout_config = {
       height = 20,
       width = 80,
