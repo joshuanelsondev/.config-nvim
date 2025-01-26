@@ -11,7 +11,7 @@ vim.api.nvim_set_keymap('n', '<leader>pv', ':NvimTreeOpen<CR>:wincmd p | q<CR>',
 
 require('nvim-tree').setup {
   view = {
-    width = 25,
+    width = 30,
     side = "left",
     relativenumber = true,
   },
