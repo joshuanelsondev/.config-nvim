@@ -21,7 +21,7 @@ local function git_files_with_layout()
       width = 80,
     },
     previewer = false,
-    prompt_title = "",
+    prompt_title = "Git Files",
   }))
 end
 
