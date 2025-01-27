@@ -16,13 +16,13 @@ require('material').setup({
       TelescopePromptCounter = { fg = "#35C0B4", bg = "none", bold = true },
       -- Telescope Prompt
       TelescopePromptBorder = { fg = "#3E535A" },
-      TelescopePromptTitle = { fg = "#ACD7E6", bg = "#253237" },
-      TelescopePromptNormal = { fg = "#ACD7E6", bg = "#253237" },
+      TelescopePromptTitle = { fg = "#ACD7E6", bg = "none" },
+      TelescopePromptNormal = { fg = "#ACD7E6", bg = "none" },
 
       -- Telescope Results
       TelescopeResultsBorder = { fg = "#3E535A" },
-      TelescopeResultsTitle = { fg = "#ACD7E6", bg = "#253237" },
-      TelescopeResultsNormal = { fg = "#ACD7E6", bg = "#253237" },
+      TelescopeResultsTitle = { fg = "#ACD7E6", bg = "none" },
+      TelescopeResultsNormal = { fg = "#ACD7E6", bg = "none" },
 
       -- Telescope Preview
       TelescopePreviewBorder = { fg = "#3E535A" },
