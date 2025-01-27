@@ -35,5 +35,7 @@ vim.o.background = 'dark'
 
 vim.o.cursorline = true
 
+vim.opt.fillchars:append({ eob = " " })
+
 vim.cmd[[highlight Search guifg=#FFFFFF guibg=#35C0B4]]
 vim.cmd[[highlight IncSearch guifg=#FFFFFF guibg=#35C0B4]]
