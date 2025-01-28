@@ -36,6 +36,9 @@ vim.o.background = 'dark'
 vim.o.cursorline = true
 
 vim.opt.fillchars:append({ eob = " " })
+vim.opt.fillchars:append({ vert = "┃" })
+
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#35C0B4", bg = "none" })
 
 vim.cmd[[highlight Search guifg=#FFFFFF guibg=#35C0B4]]
 vim.cmd[[highlight IncSearch guifg=#FFFFFF guibg=#35C0B4]]
