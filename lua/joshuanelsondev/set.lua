@@ -1,14 +1,14 @@
 vim.g.mapleader = ' '
 vim.opt.mouse = ""
-vim.opt.fillchars:append({ eob = " " })
-vim.opt.fillchars:append({ vert = "┃" })
-
-vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#35C0B4", bg = "none" })
 
 vim.defer_fn(function()
   vim.opt.termguicolors = true
   vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i:hor25-Cursor,ve:hor35-Cursor,o:hor50-Cursor"
   vim.cmd [[highlight Cursor guifg=white guibg=#35C0B4]]
+  vim.opt.fillchars:append({ eob = " " })
+  vim.opt.fillchars:append({ vert = "┃" })
+
+  vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#35C0B4", bg = "none" })
 end, 100)
 
 vim.opt.nu = true
