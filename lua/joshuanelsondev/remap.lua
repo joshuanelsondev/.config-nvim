@@ -18,6 +18,11 @@ vim.keymap.set('n', 'n', 'nzzzv', opts)
 vim.keymap.set('n', 'N', 'Nzzzv', opts)
 vim.keymap.set('n', '<leader>v', ':vert split<CR>', opts)
 
+-- Markdown Preview mappings (remapped to <leader>m>)
+vim.keymap.set('n', '<leader>ms', '<Plug>MarkdownPreview', opts)
+vim.keymap.set('n', '<leader>me', '<Plug>MarkdownPreviewStop', opts)
+vim.keymap.set('n', '<leader>m', '<Plug>MarkdownPreviewToggle', opts)
+
 -- Insert mode mappings
 vim.keymap.set('i', '<A-j>', '<Esc>:m .+1<CR>==gi', opts)
 vim.keymap.set('i', '<A-k>', '<Esc>:m .-2<CR>==gi', opts)
