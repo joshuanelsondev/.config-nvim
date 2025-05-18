@@ -24,6 +24,8 @@ return require('packer').startup(function(use)
       vim.g.ale_fix_on_save = 1
     end
   }
+  use 'neovim/nvim-lspconfig'
+  use 'mfussenegger/nvim-jdtls'
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
