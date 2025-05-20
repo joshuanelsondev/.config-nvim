@@ -75,10 +75,6 @@ return require('packer').startup(function(use)
 
   use ('shaunsingh/nord.nvim')
 
-  use('jose-elias-alvarez/null-ls.nvim')
-
-  use('MunifTanjim/prettier.nvim')
-
   use('marko-cerovac/material.nvim')
 
   use('nvim-tree/nvim-web-devicons')
