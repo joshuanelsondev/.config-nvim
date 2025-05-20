@@ -16,9 +16,9 @@ local config = {
     "--add-opens", "java.base/java.util=ALL-UNNAMED",
     "--add-opens", "java.base/java.lang=ALL-UNNAMED",
 
-    "-jar", jdtls_path .. "plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar",
+    "-jar", jdtls_path .. "/plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar",
 
-    "-configuration", jdtls_path .. "config_mac",
+    "-configuration", jdtls_path .. "/config_mac",
 
     "-data", home .. "/.local/share/eclipse/nvim-jdtls-workspace"
   },
