@@ -5,12 +5,19 @@ lsp.preset('recommended')
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {'eslint', 'lua_ls'},
+  handlers = {
+    function(server_name)
+      require('lspconfig')[server_name].setup({})
+    end,
+
+    jdtls = function() end,
+  },
 })
 require('lspconfig').lua_ls.setup {
   settings = {
     Lua = {
       diagnostics = {
-        globals = {'vim'}, -- Recognize 'vim' as a global variable
+        globals = {'vim'},
       },
     },
   },
