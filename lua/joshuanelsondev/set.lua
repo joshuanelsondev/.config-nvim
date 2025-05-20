@@ -1,6 +1,9 @@
 vim.g.mapleader = ' '
 vim.opt.mouse = ""
 
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+
 vim.defer_fn(function()
   vim.opt.termguicolors = true
   vim.opt.guicursor = "n-v-c:block-Cursor/lCursor,i:hor25-Cursor,ve:hor35-Cursor,o:hor50-Cursor"

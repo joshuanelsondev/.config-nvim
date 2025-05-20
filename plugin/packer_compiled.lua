@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ale = {
-    config = { "\27LJ\2\n°\3\0\0\3\0\19\0\0296\0\0\0009\0\1\0005\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\2\0006\0\0\0009\0\1\0005\1\14\0005\2\r\0=\2\5\0015\2\15\0=\2\a\0015\2\16\0=\2\t\0015\2\17\0=\2\v\1=\1\f\0006\0\0\0009\0\1\0)\1\1\0=\1\18\0K\0\1\0\20ale_fix_on_save\1\2\0\0\veslint\1\2\0\0\veslint\1\2\0\0\veslint\1\0\4\20javascriptreact\0\20typescriptreact\0\15javascript\0\15typescript\0\1\2\0\0\veslint\15ale_fixers\20typescriptreact\1\2\0\0\veslint\15typescript\1\2\0\0\veslint\20javascriptreact\1\2\0\0\veslint\15javascript\1\0\4\20javascriptreact\0\20typescriptreact\0\15javascript\0\15typescript\0\1\2\0\0\veslint\16ale_linters\6g\bvim\0" },
+    config = { "\27LJ\2\n°\3\0\0\3\0\19\0\0296\0\0\0009\0\1\0005\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\2\0006\0\0\0009\0\1\0005\1\14\0005\2\r\0=\2\5\0015\2\15\0=\2\a\0015\2\16\0=\2\t\0015\2\17\0=\2\v\1=\1\f\0006\0\0\0009\0\1\0)\1\1\0=\1\18\0K\0\1\0\20ale_fix_on_save\1\2\0\0\veslint\1\2\0\0\veslint\1\2\0\0\veslint\1\0\4\15javascript\0\15typescript\0\20javascriptreact\0\20typescriptreact\0\1\2\0\0\veslint\15ale_fixers\20typescriptreact\1\2\0\0\veslint\15typescript\1\2\0\0\veslint\20javascriptreact\1\2\0\0\veslint\15javascript\1\0\4\15javascript\0\15typescript\0\20javascriptreact\0\20typescriptreact\0\1\2\0\0\veslint\16ale_linters\6g\bvim\0" },
     loaded = true,
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
@@ -147,11 +147,6 @@ _G.packer_plugins = {
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "https://github.com/shaunsingh/nord.nvim"
   },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -197,11 +192,6 @@ _G.packer_plugins = {
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["prettier.nvim"] = {
-    loaded = true,
-    path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/prettier.nvim",
-    url = "https://github.com/MunifTanjim/prettier.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/joshuanelson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -226,7 +216,7 @@ try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\
 time([[Setup for markdown-preview.nvim]], false)
 -- Config for: ale
 time([[Config for ale]], true)
-try_loadstring("\27LJ\2\n°\3\0\0\3\0\19\0\0296\0\0\0009\0\1\0005\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\2\0006\0\0\0009\0\1\0005\1\14\0005\2\r\0=\2\5\0015\2\15\0=\2\a\0015\2\16\0=\2\t\0015\2\17\0=\2\v\1=\1\f\0006\0\0\0009\0\1\0)\1\1\0=\1\18\0K\0\1\0\20ale_fix_on_save\1\2\0\0\veslint\1\2\0\0\veslint\1\2\0\0\veslint\1\0\4\20javascriptreact\0\20typescriptreact\0\15javascript\0\15typescript\0\1\2\0\0\veslint\15ale_fixers\20typescriptreact\1\2\0\0\veslint\15typescript\1\2\0\0\veslint\20javascriptreact\1\2\0\0\veslint\15javascript\1\0\4\20javascriptreact\0\20typescriptreact\0\15javascript\0\15typescript\0\1\2\0\0\veslint\16ale_linters\6g\bvim\0", "config", "ale")
+try_loadstring("\27LJ\2\n°\3\0\0\3\0\19\0\0296\0\0\0009\0\1\0005\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\2\0006\0\0\0009\0\1\0005\1\14\0005\2\r\0=\2\5\0015\2\15\0=\2\a\0015\2\16\0=\2\t\0015\2\17\0=\2\v\1=\1\f\0006\0\0\0009\0\1\0)\1\1\0=\1\18\0K\0\1\0\20ale_fix_on_save\1\2\0\0\veslint\1\2\0\0\veslint\1\2\0\0\veslint\1\0\4\15javascript\0\15typescript\0\20javascriptreact\0\20typescriptreact\0\1\2\0\0\veslint\15ale_fixers\20typescriptreact\1\2\0\0\veslint\15typescript\1\2\0\0\veslint\20javascriptreact\1\2\0\0\veslint\15javascript\1\0\4\15javascript\0\15typescript\0\20javascriptreact\0\20typescriptreact\0\1\2\0\0\veslint\16ale_linters\6g\bvim\0", "config", "ale")
 time([[Config for ale]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
