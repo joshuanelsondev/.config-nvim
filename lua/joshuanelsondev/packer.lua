@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
     end
   }
   use 'neovim/nvim-lspconfig'
-  use 'mfussenegger/nvim-jdtls'
+  --use 'mfussenegger/nvim-jdtls'
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
