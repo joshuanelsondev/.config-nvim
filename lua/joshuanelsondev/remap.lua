@@ -1,5 +1,5 @@
 
-local opts = { noremap = true }
+local opts = { noremap = true, silent = true }
 
 -- Normal mode mappings
 vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', opts)
@@ -17,11 +17,21 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
 vim.keymap.set('n', 'n', 'nzzzv', opts)
 vim.keymap.set('n', 'N', 'Nzzzv', opts)
 vim.keymap.set('n', '<leader>v', ':vert split<CR>', opts)
+vim.keymap.set('n', '<leader>1', '`1', opts)
+vim.keymap.set('n', '<leader>2', '`2', opts)
+vim.keymap.set('n', '<leader>3', '`3', opts)
+vim.keymap.set('n', '<leader>4', '`4', opts)
+vim.keymap.set('n', '<leader>a', '`a', opts)
+vim.keymap.set('n', '<leader>s', '`s', opts)
+vim.keymap.set('n', '<leader>d', '`d', opts)
+vim.keymap.set('n', '<leader>f', '`f', opts)
+vim.keymap.set('n', '<leader>dm', ':delm', opts)
+vim.keymap.set('n', '<leader>m', ':marks<CR>', opts)
 
 -- Markdown Preview mappings (remapped to <leader>m>)
-vim.keymap.set('n', '<leader>ms', '<Plug>MarkdownPreview', opts)
-vim.keymap.set('n', '<leader>me', '<Plug>MarkdownPreviewStop', opts)
-vim.keymap.set('n', '<leader>mt', '<Plug>MarkdownPreviewToggle', opts)
+--vim.keymap.set('n', '<leader>ms', '<Plug>MarkdownPreview', opts)
+--vim.keymap.set('n', '<leader>me', '<Plug>MarkdownPreviewStop', opts)
+--vim.keymap.set('n', '<leader>mt', '<Plug>MarkdownPreviewToggle', opts)
 
 -- Insert mode mappings
 vim.keymap.set('i', '<A-j>', '<Esc>:m .+1<CR>==gi', opts)
