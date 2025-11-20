@@ -40,7 +40,7 @@ vim.opt.updatetime = 50
 
 vim.o.background = 'dark'
 
-vim.o.cursorline = true
+vim.opt.cursorline = false
 
 
 vim.cmd[[highlight Search guifg=#FFFFFF guibg=#35C0B4]]
