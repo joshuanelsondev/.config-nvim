@@ -1,6 +1,7 @@
 vim.g.mapleader = ' '
 vim.opt.mouse = ""
 
+vim.opt.showmode = false
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
@@ -40,8 +41,9 @@ vim.opt.updatetime = 50
 
 vim.o.background = 'dark'
 
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 
 
 vim.cmd[[highlight Search guifg=#FFFFFF guibg=#35C0B4]]
 vim.cmd[[highlight IncSearch guifg=#FFFFFF guibg=#35C0B4]]
+vim.cmd[[highlight CursorLineNr guifg=#35C0B4 guibg=None]]

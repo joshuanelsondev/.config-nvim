@@ -36,7 +36,7 @@ local mode_color = function()
     R = '#DF3030',      -- Bright Red
     t = '#94e2d5',      -- Teal
   }
-  
+
   local mode = vim.api.nvim_get_mode().mode
   return {
     bg = mode_colors[mode] or '#0FBCA2',
@@ -92,8 +92,8 @@ require('lualine').setup {
       { 
         'location', 
         color = mode_color, -- Applied the dark text/mode color logic here
-        separator = { right = '' }, 
-        left_padding = 2 
+        separator = { right = '' },
+        left_padding = 2
       },
     },
   },
