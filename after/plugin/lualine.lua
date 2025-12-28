@@ -5,7 +5,7 @@ local mode_map = {
   ['V']      = '-- VISUAL LINE --',
   ['\22']    = '-- VISUAL BLOCK --',
   ['s']      = 'SELECT',
-  ['S']      = 'SELECT LINE',
+  ['S']      = 'SELECT LINE', 
   ['\19']    = 'SELECT BLOCK',
   ['i']      = '-- INSERT --',
   ['ic']     = '-- INSERT --',
@@ -40,71 +40,51 @@ local mode_color = function()
   local mode = vim.api.nvim_get_mode().mode
   return {
     bg = mode_colors[mode] or '#0FBCA2',
-    fg = '#111111', -- Dark text color for high contrast
+    fg = '#111111', 
     gui = 'bold'
+  }
+end
+
+local dynamic_theme = function()
+  local colors = mode_color
+  local full_style = { a = colors, b = colors, c = colors, x = colors, y = colors, z = colors }
+  return {
+    normal = full_style,
+    insert = full_style,
+    visual = full_style,
+    command = full_style,
+    replace = full_style,
+    inactive = { a = { bg = '#222222', fg = '#666666' }, b = { bg = '#222222', fg = '#666666' }, c = { bg = '#222222', fg = '#666666' } }
   }
 end
 
 require('lualine').setup {
   options = {
-    theme = 'auto',
+    theme = dynamic_theme,
     component_separators = '',
     section_separators = { left = '', right = '' },
     globalstatus = true,
   },
   sections = {
-    -- Left side: Mode display
     lualine_a = {
       {
-        function()
-          return mode_map[vim.api.nvim_get_mode().mode] or "__"
-        end,
-        color = mode_color,
-        separator = { left = '' },
-        right_padding = 2
+        function() return mode_map[vim.api.nvim_get_mode().mode] or "__" end,
+        padding = { left = 1, right = 2 }
       }
     },
-    -- Filename and Branch
     lualine_b = {
-      {
-        'filename',
-        path = 1,
-        symbols = {
-          modified = '[+]',
-          readonly = '[RO]',
-          unnamed = '[]',
-        },
-        color = function()
-          return { fg = vim.bo.modified and '#DF3030' or '#0FBCA2' }
-        end,
-      },
+      { 'filename', path = 1, symbols = { modified = '[+]', readonly = '[RO]', unnamed = '[]' } },
       'branch'
     },
-    -- Empty center with alignment
-    lualine_c = {
-      '%=',
-    },
+    lualine_c = { '%=' },
     lualine_x = {},
-    -- File details
     lualine_y = { 'filetype', 'progress' },
-    -- Right side: Location display
     lualine_z = {
-      { 
-        'location', 
-        color = mode_color, -- Applied the dark text/mode color logic here
-        separator = { right = '' },
-        left_padding = 2
-      },
+      { 'location', padding = { left = 2, right = 1 } },
     },
   },
   inactive_sections = {
     lualine_a = { 'filename' },
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
     lualine_z = { 'location' },
   },
-  tabline = {},
-  extensions = {},
 }
