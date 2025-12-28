@@ -26,13 +26,13 @@ local mode_map = {
 
 local mode_color = function()
   local mode_colors = {
-    n = '#89b4fa',      -- Light Blue
+    n = '#35C0B4',      -- Aqua
     no = '#f38ba8',     -- Red/Pink
     i = '#a6e3a1',      -- Green
     v = '#f9e2af',      -- Yellow
     V = '#f9e2af',      -- Yellow
     ['\22'] = '#C75AE3',-- Purple
-    c = '#35C0B4',      -- Aqua
+    c = '#89b4fa',      -- Light Blue
     R = '#DF3030',      -- Bright Red
     t = '#94e2d5',      -- Teal
   }
