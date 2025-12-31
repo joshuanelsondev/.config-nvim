@@ -7,13 +7,14 @@ require('mason-lspconfig').setup({
   ensure_installed = {'eslint', 'lua_ls'},
   handlers = {
     function(server_name)
-      require('lspconfig')[server_name].setup({})
+      vim.lsp.enable(server_name)
     end,
 
     jdtls = function() end,
   },
 })
-require('lspconfig').lua_ls.setup {
+
+vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
       diagnostics = {
@@ -21,9 +22,9 @@ require('lspconfig').lua_ls.setup {
       },
     },
   },
-}
+})
 
-
+vim.lsp.enable('lua_ls')
 
 local cmp = require('cmp')
 
@@ -36,7 +37,7 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-n>'] = cmp.mapping.select_next_item(),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-y>'] = cmp.mapping.confirm(),
+    ['<C-y>'] = cmp.mapping.confirm({select = true}),
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
   }),
@@ -45,9 +46,6 @@ cmp.setup({
       require('luasnip').lsp_expand(args.body)
     end,
   },
-})
-
-cmp.setup({
   sources = {
     {name = 'nvim_lsp'},
   }
@@ -56,8 +54,7 @@ cmp.setup({
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
-	vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
+  vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
 end)
 
 lsp.setup()
-
