@@ -73,7 +73,7 @@ require('lualine').setup {
       }
     },
     lualine_b = {
-      { 'filename', path = 1, symbols = { modified = '[+]', readonly = '[RO]', unnamed = '[]' } },
+      { 'filename', path = 1, symbols = { modified = '[+]', readonly = '[RO]', unnamed = '' } },
       'branch'
     },
     lualine_c = { '%=' },
