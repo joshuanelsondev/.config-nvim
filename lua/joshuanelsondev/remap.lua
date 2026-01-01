@@ -59,5 +59,5 @@ local spanish_chars = {
 }
 
 for key, val in pairs(spanish_chars) do
-    vim.keymap.set('i', ',,' .. key .. '>', val, opts)
+    vim.keymap.set('i', ',,' .. key, val, opts)
 end
