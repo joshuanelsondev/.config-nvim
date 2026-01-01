@@ -8,7 +8,7 @@ vim.keymap.set('n', '<C-t>', ':Files!<CR>', opts)
 vim.keymap.set('n', '<C-p>', ':GFiles!<CR>', opts)
 vim.keymap.set('n', '<C-g>', ':Ag<CR>', opts)
 vim.keymap.set('n', '<leader><CR>', ':w<CR>', opts)
-vim.keymap.set('n', '<leader>f', ':find ', opts)
+vim.keymap.set('n', '<leader>so', ':s/', opts)
 vim.keymap.set('n', '<leader>so', ':s/', opts)
 vim.keymap.set('n', '<leader>sa', ':%s/', opts)
 vim.keymap.set('n', '<leader>sp', ':set path+=**<CR>', opts)
@@ -40,7 +40,7 @@ vim.keymap.set('n', '<leader>m', ':marks<CR>', opts)
 -- Insert mode mappings
 vim.keymap.set('i', '<A-j>', '<Esc>:m .+1<CR>==gi', opts)
 vim.keymap.set('i', '<A-k>', '<Esc>:m .-2<CR>==gi', opts)
-vim.keymap.set('i', '<Tab>', '<Esc>', opts)
+vim.keymap.set('i', 'jk', '<Esc>', opts)
 
 -- Visual mode mappings
 vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv", opts)
@@ -48,4 +48,16 @@ vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
 
 -- General mappings
 vim.keymap.set('', '<Tab>', '<Esc>', opts)
-vim.keymap.set('x', '<leader>p', "\"_dp", opts)
+
+-- Spanish Accents (Alt/Option + Key)
+local spanish_chars = {
+    ['a'] = 'á', ['e'] = 'é', ['i'] = 'í', ['o'] = 'ó', ['u'] = 'ú',
+    ['n'] = 'ñ', ['u:'] = 'ü',
+    ['A'] = 'Á', ['E'] = 'É', ['I'] = 'Í', ['O'] = 'Ó', ['U'] = 'Ú',
+    ['N'] = 'Ñ', ['U:'] = 'Ü',
+    ['!'] = '¡', ['?'] = '¿'
+}
+
+for key, val in pairs(spanish_chars) do
+    vim.keymap.set('i', ',,' .. key .. '>', val, opts)
+end
