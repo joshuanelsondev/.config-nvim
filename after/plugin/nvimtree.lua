@@ -13,7 +13,7 @@ require('nvim-tree').setup {
   view = {
     width = 30,
     side = "left",
-    relativenumber = true,
+    number = true,
   },
   filters = {
     dotfiles = false,

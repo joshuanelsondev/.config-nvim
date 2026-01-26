@@ -15,8 +15,7 @@ vim.defer_fn(function()
   vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#35C0B4", bg = "none" })
 end, 100)
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.number = true
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 4

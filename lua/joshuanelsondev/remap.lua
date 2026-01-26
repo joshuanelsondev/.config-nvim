@@ -31,6 +31,9 @@ vim.keymap.set('n', '<leader>7', '`7', opts)
 vim.keymap.set('n', '<leader>8', '`8', opts)
 vim.keymap.set('n', '<leader>dm', ':delm', opts)
 vim.keymap.set('n', '<leader>m', ':marks<CR>', opts)
+vim.keymap.set("n", "<leader>sn", function()
+    vim.wo.relativenumber = not vim.wo.relativenumber
+end, { desc = "Toggle hybrid/absolute line numbers" })
 
 -- Markdown Preview mappings (remapped to <leader>m>)
 --vim.keymap.set('n', '<leader>ms', '<Plug>MarkdownPreview', opts)
