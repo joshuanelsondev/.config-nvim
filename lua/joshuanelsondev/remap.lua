@@ -34,6 +34,7 @@ vim.keymap.set('n', '<leader>m', ':marks<CR>', opts)
 vim.keymap.set("n", "<leader>sn", function()
     vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = "Toggle hybrid/absolute line numbers" })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 
 -- Markdown Preview mappings (remapped to <leader>m>)
 --vim.keymap.set('n', '<leader>ms', '<Plug>MarkdownPreview', opts)
