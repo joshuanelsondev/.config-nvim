@@ -47,3 +47,4 @@ vim.opt.cursorline = true
 vim.cmd[[highlight Search guifg=#FFFFFF guibg=#35C0B4]]
 vim.cmd[[highlight IncSearch guifg=#FFFFFF guibg=#35C0B4]]
 vim.cmd[[highlight CursorLineNr guifg=#35C0B4 guibg=None]]
+vim.cmd[[highlight CursorLine guifg=None guibg=None gui=underline guisp=#35C0B4]]
